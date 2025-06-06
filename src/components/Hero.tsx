@@ -1,3 +1,4 @@
+
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-6 py-8">
@@ -12,7 +13,7 @@ const Hero = () => {
               <button onClick={() => document.getElementById('gallery')?.scrollIntoView({
               behavior: 'smooth'
             })} className="text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 w-fit">
-                View Collection
+                My work
               </button>
               <button onClick={() => document.getElementById('about')?.scrollIntoView({
               behavior: 'smooth'
