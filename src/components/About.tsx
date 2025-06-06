@@ -7,8 +7,8 @@ const About = () => {
           <div className="animate-scale-in">
             <div className="aspect-[4/5] bg-secondary rounded-sm overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=500&h=600&fit=crop&crop=center" 
-                alt="Potter at work in studio"
+                src="/lovable-uploads/fe8d3bbf-a03b-480f-89ad-49ba8a761320.png"
+                alt="Anna Verena, ceramic artist"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -16,8 +16,8 @@ const About = () => {
           
           <div className="space-y-8 animate-fade-in">
             <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground">
-              The Artist's
-              <span className="text-sage block">Journey</span>
+              Anna
+              <span className="text-sage block">Verena</span>
             </h2>
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
