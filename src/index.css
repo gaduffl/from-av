@@ -98,11 +98,20 @@
     @apply border-border;
   }
 
-  html, body {
+  /* Aggressive white background enforcement for all devices */
+  html {
+    background-color: white !important;
+    color: black !important;
+    background: white !important;
+  }
+
+  body {
     @apply bg-white text-black font-inter;
     font-feature-settings: "rlig" 1, "calt" 1;
     background-color: white !important;
     color: black !important;
+    background: white !important;
+    background-image: none !important;
   }
 
   #root {
@@ -110,6 +119,8 @@
     background-color: white !important;
     color: black !important;
     min-height: 100vh;
+    background: white !important;
+    background-image: none !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -120,6 +131,11 @@
   p, span, div {
     @apply text-black;
     color: black !important;
+  }
+
+  /* Force white background on all containers */
+  section, main, article, aside, nav, header, footer {
+    background-color: white !important;
   }
 }
 
@@ -158,6 +174,8 @@
 
   .force-white-bg {
     background-color: white !important;
+    background: white !important;
+    background-image: none !important;
   }
 
   .force-black-text {
@@ -165,18 +183,52 @@
   }
 }
 
-/* Mobile-specific overrides to ensure white background */
+/* Universal mobile overrides - most aggressive approach */
 @media screen and (max-width: 768px) {
+  * {
+    background-color: white !important;
+    color: black !important;
+    background: white !important;
+    background-image: none !important;
+  }
+  
   html, body, #root {
     background-color: white !important;
     color: black !important;
+    background: white !important;
+    background-image: none !important;
   }
   
-  * {
+  h1, h2, h3, h4, h5, h6, p, span, div, a, button, section, main, article, aside, nav, header, footer {
     color: black !important;
+    background-color: transparent !important;
   }
-  
-  h1, h2, h3, h4, h5, h6, p, span, div, a, button {
-    color: black !important;
+
+  /* Override any potential system dark mode */
+  @media (prefers-color-scheme: dark) {
+    * {
+      background-color: white !important;
+      color: black !important;
+      background: white !important;
+      background-image: none !important;
+    }
   }
+}
+
+/* Additional safeguards for webkit browsers (Safari, mobile browsers) */
+@supports (-webkit-appearance: none) {
+  html, body, #root {
+    background-color: white !important;
+    background: white !important;
+    -webkit-background-color: white !important;
+  }
+}
+
+/* Override any potential auto-fill or system styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: black !important;
 }
