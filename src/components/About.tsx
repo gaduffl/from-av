@@ -1,9 +1,10 @@
 
+
 const About = () => {
   return (
-    <section id="about" className="py-12">
+    <section id="about" className="py-8">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="animate-scale-in">
             <div className="aspect-[4/5] bg-secondary rounded-sm overflow-hidden">
               <img 
@@ -14,12 +15,12 @@ const About = () => {
             </div>
           </div>
           
-          <div className="space-y-6 animate-fade-in">
-            <h2 className="font-crimson text-3xl lg:text-4xl font-semibold text-black">
+          <div className="space-y-4 animate-fade-in">
+            <h2 className="font-crimson text-3xl lg:text-4xl font-semibold text-foreground">
               About me
             </h2>
             
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <div className="space-y-3 text-muted-foreground leading-relaxed">
               <p className="text-lg">
                 Hej! I'm Anna Verena. My journey with ceramics began in 2021 with a handbuilding course in Wiesbaden. A year later, I discovered turning on the potter's wheel - first in Frankfurt, later in Mainz. What started as a hobby quickly developed into a real passion.
               </p>
@@ -33,15 +34,15 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 pt-6">
+            <div className="grid grid-cols-2 gap-4 pt-4">
               <div>
-                <h3 className="font-crimson text-2xl font-medium text-black mb-2">Philosophy</h3>
+                <h3 className="font-crimson text-2xl font-medium text-foreground mb-2">Philosophy</h3>
                 <p className="text-sm text-muted-foreground">
                   Embracing imperfection as a path to authentic beauty
                 </p>
               </div>
               <div>
-                <h3 className="font-crimson text-2xl font-medium text-black mb-2">Technique</h3>
+                <h3 className="font-crimson text-2xl font-medium text-foreground mb-2">Technique</h3>
                 <p className="text-sm text-muted-foreground">
                   Traditional wheel throwing with contemporary finishing
                 </p>
@@ -55,3 +56,4 @@ const About = () => {
 };
 
 export default About;
+

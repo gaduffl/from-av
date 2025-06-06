@@ -1,4 +1,5 @@
 
+
 const Gallery = () => {
   const pieces = [{
     id: 1,
@@ -31,10 +32,10 @@ const Gallery = () => {
     image: "/lovable-uploads/dab03e73-bd5a-4005-af83-6a134bae97de.png",
     description: "Handcrafted cups for daily rituals"
   }];
-  return <section id="gallery" className="py-16 bg-secondary/30">
+  return <section id="gallery" className="py-12 bg-secondary/30">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-4">
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             Featured Collection
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -51,7 +52,7 @@ const Gallery = () => {
                 <img src={piece.image} alt={piece.title} className="w-full h-full group-hover:scale-105 transition-transform duration-700 object-contain" />
               </div>
               <div className="space-y-2">
-                <h3 className="font-crimson text-xl font-medium text-black group-hover:text-black transition-colors">
+                <h3 className="font-crimson text-xl font-medium text-foreground group-hover:text-foreground transition-colors">
                   {piece.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -61,10 +62,10 @@ const Gallery = () => {
             </div>)}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <button onClick={() => document.getElementById('contact')?.scrollIntoView({
           behavior: 'smooth'
-        })} className="text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">
+        })} className="text-foreground font-medium text-lg border-b-2 border-transparent hover:border-foreground transition-all duration-300 pb-1">
             Inquire About Pieces
           </button>
         </div>
@@ -72,3 +73,4 @@ const Gallery = () => {
     </section>;
 };
 export default Gallery;
+
