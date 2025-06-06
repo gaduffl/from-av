@@ -6,8 +6,8 @@ const Gallery = () => {
     description: "A minimal vase inspired by Nordic design"
   }, {
     id: 2,
-    title: "Earth Bowl",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=500&fit=crop&crop=center",
+    title: "Faux Kintsugi",
+    image: "/lovable-uploads/8461439c-45d2-4e3b-82d2-3a089aae989d.png",
     description: "Handthrown bowl with natural clay finish"
   }, {
     id: 3,
