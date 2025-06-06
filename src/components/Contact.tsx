@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -10,23 +11,50 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    // Simulate form submission
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for your interest. I'll get back to you soon."
-    });
+    try {
+      // EmailJS configuration - you'll need to set up EmailJS account and get these values
+      const serviceId = 'your_service_id'; // Replace with your EmailJS service ID
+      const templateId = 'your_template_id'; // Replace with your EmailJS template ID
+      const publicKey = 'your_public_key'; // Replace with your EmailJS public key
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'info@fromav.com'
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your interest. I'll get back to you soon at info@fromav.com"
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact info@fromav.com directly",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -55,6 +83,9 @@ const Contact = () => {
                 <p className="leading-relaxed text-slate-950">
                   Whether you're looking for a custom piece for your home or interested in 
                   featuring my work, I'm always excited to connect with fellow art enthusiasts.
+                </p>
+                <p className="leading-relaxed text-slate-950 mt-4">
+                  Send me a message using the form and I'll respond to <strong>info@fromav.com</strong>
                 </p>
               </div>
 
@@ -131,9 +162,10 @@ const Contact = () => {
 
                 <button 
                   type="submit" 
-                  className="w-full text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 py-3"
+                  disabled={isSubmitting}
+                  className="w-full text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message to info@fromav.com'}
                 </button>
               </form>
             </div>
