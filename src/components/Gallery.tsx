@@ -1,4 +1,3 @@
-
 const Gallery = () => {
   const pieces = [{
     id: 1,
@@ -35,7 +34,7 @@ const Gallery = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-8 animate-fade-in">
           <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground mb-4">
-            Featured Collection
+            My work
           </h2>
           <p className="text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
             Each piece tells a story of patience and intention. Explore the intersection 
