@@ -11,8 +11,8 @@ const Gallery = () => {
     description: "Handthrown bowl with natural clay finish"
   }, {
     id: 3,
-    title: "Stone Cup",
-    image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=400&h=500&fit=crop&crop=center",
+    title: "Vases",
+    image: "/lovable-uploads/3d59c32d-150d-4241-b96d-30b5731f9912.png",
     description: "Daily ritual cup in warm earth tone"
   }, {
     id: 4,
