@@ -1,17 +1,26 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Natural, sophisticated design system with Scandi/Japandi aesthetics */
+/*
+ * Natural, sophisticated design system with Scandi/Japandi aesthetics.
+ * This file has been optimized to remove conflicting rules and improve maintainability.
+ */
 
+/* * =============================================================================
+ * CSS Custom Properties (Variables) for Theming
+ * =============================================================================
+ * Defines the color palette and design tokens for both light (default) and dark themes.
+ * Using CSS variables allows for easy theme switching and consistency.
+ */
 @layer base {
   :root {
-    --background: 255 255 255; /* pure white */
-    --foreground: 0 0 0; /* pure black */
+    /* Light Theme (Default) */
+    --background: 255 255 255; /* white */
+    --foreground: 0 0 0; /* black */
 
-    --card: 255 255 255; /* pure white */
-    --card-foreground: 0 0 0; /* pure black */
+    --card: 255 255 255;
+    --card-foreground: 0 0 0;
 
     --popover: 255 255 255;
     --popover-foreground: 0 0 0;
@@ -20,13 +29,13 @@
     --primary-foreground: 255 255 255;
 
     --secondary: 245 243 240; /* soft beige */
-    --secondary-foreground: 0 0 0; /* pure black */
+    --secondary-foreground: 0 0 0;
 
     --muted: 245 243 240;
     --muted-foreground: 60 60 60; /* dark grey */
 
     --accent: 168 162 149; /* warm taupe */
-    --accent-foreground: 0 0 0; /* pure black */
+    --accent-foreground: 0 0 0;
 
     --destructive: 185 85 69; /* terracotta */
     --destructive-foreground: 255 255 255;
@@ -37,15 +46,6 @@
 
     --radius: 0.375rem;
 
-    --sidebar-background: 255 255 255;
-    --sidebar-foreground: 0 0 0;
-    --sidebar-primary: 132 140 114;
-    --sidebar-primary-foreground: 255 255 255;
-    --sidebar-accent: 245 243 240;
-    --sidebar-accent-foreground: 0 0 0;
-    --sidebar-border: 231 229 228;
-    --sidebar-ring: 132 140 114;
-
     /* Custom pottery colors */
     --sage: 132 140 114;
     --clay: 185 147 126;
@@ -53,223 +53,95 @@
     --earth: 139 117 99;
   }
 
+  /* * Dark Theme Overrides
+   * The original file forced a white background in dark mode. 
+   * This is unconventional. A proper dark theme would be defined here.
+   * For now, it's set to mirror the light theme as per the original file's intent.
+   */
   .dark {
-    --background: 255 255 255; /* Force white even in dark mode */
-    --foreground: 0 0 0; /* Force black text even in dark mode */
-
+    --background: 255 255 255;
+    --foreground: 0 0 0;
     --card: 255 255 255;
     --card-foreground: 0 0 0;
-
     --popover: 255 255 255;
     --popover-foreground: 0 0 0;
-
     --primary: 132 140 114;
-    --primary-foreground: 0 0 0;
-
+    --primary-foreground: 255 255 255;
     --secondary: 245 243 240;
     --secondary-foreground: 0 0 0;
-
     --muted: 245 243 240;
     --muted-foreground: 60 60 60;
-
     --accent: 168 162 149;
     --accent-foreground: 0 0 0;
-
     --destructive: 185 85 69;
     --destructive-foreground: 255 255 255;
-
     --border: 231 229 228;
     --input: 231 229 228;
     --ring: 132 140 114;
-
-    --sidebar-background: 255 255 255;
-    --sidebar-foreground: 0 0 0;
-    --sidebar-primary: 132 140 114;
-    --sidebar-primary-foreground: 0 0 0;
-    --sidebar-accent: 245 243 240;
-    --sidebar-accent-foreground: 0 0 0;
-    --sidebar-border: 231 229 228;
-    --sidebar-ring: 132 140 114;
   }
 }
 
+/* * =============================================================================
+ * Base Styles
+ * =============================================================================
+ * Applies foundational styles to base HTML elements.
+ * Removed excessive `!important` tags for better CSS specificity management.
+ */
 @layer base {
   * {
     @apply border-border;
   }
 
-  /* Ultra-aggressive white background enforcement */
-  html {
-    background-color: white !important;
-    color: black !important;
-    background: white !important;
-    background-image: none !important;
+  /* * Set the default background and text color on the html and body.
+   * This is more effective and cleaner than applying it to every element.
+   */
+  html, body {
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
   }
 
   body {
-    @apply bg-white text-black font-inter;
+    @apply font-inter;
     font-feature-settings: "rlig" 1, "calt" 1;
-    background-color: white !important;
-    color: black !important;
-    background: white !important;
-    background-image: none !important;
+    min-height: 100vh;
   }
 
+  /* Ensure the root element also has the correct background */
   #root {
-    @apply bg-white text-black;
-    background-color: white !important;
-    color: black !important;
-    min-height: 100vh;
-    background: white !important;
-    background-image: none !important;
+      background-color: rgb(var(--background));
+      color: rgb(var(--foreground));
+      min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-crimson text-black;
-    color: black !important;
+    @apply font-crimson;
   }
 
-  p, span, div {
-    @apply text-black;
-    color: black !important;
-  }
-
-  /* Force white background on all containers */
-  section, main, article, aside, nav, header, footer {
-    background-color: white !important;
-    background: white !important;
-    background-image: none !important;
+  /* Style for autofilled input fields in WebKit browsers */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(var(--background)) inset !important;
+    -webkit-text-fill-color: rgb(var(--foreground)) !important;
   }
 }
 
+/* * =============================================================================
+ * Custom Utility Classes
+ * =============================================================================
+ * Reusable classes for applying custom styles, like the pottery color palette.
+ */
 @layer utilities {
-  .text-sage {
-    color: rgb(var(--sage));
-  }
+  .text-sage { color: rgb(var(--sage)); }
+  .bg-sage { background-color: rgb(var(--sage)); }
   
-  .bg-sage {
-    background-color: rgb(var(--sage));
-  }
+  .text-clay { color: rgb(var(--clay)); }
+  .bg-clay { background-color: rgb(var(--clay)); }
   
-  .text-clay {
-    color: rgb(var(--clay));
-  }
+  .text-stone { color: rgb(var(--stone)); }
+  .bg-stone { background-color: rgb(var(--stone)); }
   
-  .bg-clay {
-    background-color: rgb(var(--clay));
-  }
-  
-  .text-stone {
-    color: rgb(var(--stone));
-  }
-  
-  .bg-stone {
-    background-color: rgb(var(--stone));
-  }
-  
-  .text-earth {
-    color: rgb(var(--earth));
-  }
-  
-  .bg-earth {
-    background-color: rgb(var(--earth));
-  }
-
-  .force-white-bg {
-    background-color: white !important;
-    background: white !important;
-    background-image: none !important;
-  }
-
-  .force-black-text {
-    color: black !important;
-  }
-}
-
-/* Enhanced mobile overrides with stronger specificity */
-@media screen and (max-width: 768px) {
-  html, body, #root {
-    background-color: white !important;
-    color: black !important;
-    background: white !important;
-    background-image: none !important;
-    -webkit-background-color: white !important;
-  }
-  
-  * {
-    background-color: transparent !important;
-    color: black !important;
-    background-image: none !important;
-  }
-  
-  body {
-    background-color: white !important;
-    background: white !important;
-  }
-  
-  #root {
-    background-color: white !important;
-    background: white !important;
-  }
-  
-  h1, h2, h3, h4, h5, h6, p, span, div, a, button, section, main, article, aside, nav, header, footer {
-    color: black !important;
-  }
-
-  section, main, article, aside, nav, header, footer {
-    background-color: white !important;
-    background: white !important;
-    background-image: none !important;
-  }
-
-  /* Override any potential system dark mode on mobile */
-  @media (prefers-color-scheme: dark) {
-    html, body, #root {
-      background-color: white !important;
-      color: black !important;
-      background: white !important;
-      background-image: none !important;
-    }
-    
-    * {
-      background-color: transparent !important;
-      color: black !important;
-      background-image: none !important;
-    }
-    
-    body, #root {
-      background-color: white !important;
-      background: white !important;
-    }
-  }
-}
-
-/* Additional mobile browser specific overrides */
-@media screen and (max-width: 768px) {
-  @supports (-webkit-appearance: none) {
-    html, body, #root {
-      background-color: white !important;
-      background: white !important;
-      -webkit-background-color: white !important;
-      color: black !important;
-    }
-  }
-  
-  /* iOS Safari specific */
-  @supports (-webkit-touch-callout: none) {
-    html, body, #root {
-      background-color: white !important;
-      background: white !important;
-      -webkit-background-color: white !important;
-    }
-  }
-}
-
-/* Override any potential auto-fill or system styling */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
-  -webkit-text-fill-color: black !important;
+  .text-earth { color: rgb(var(--earth)); }
+  .bg-earth { background-color: rgb(var(--earth)); }
 }
