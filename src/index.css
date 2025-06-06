@@ -54,41 +54,41 @@
   }
 
   .dark {
-    --background: 0 0 0;
-    --foreground: 255 255 255;
+    --background: 255 255 255; /* Force white even in dark mode */
+    --foreground: 0 0 0; /* Force black text even in dark mode */
 
-    --card: 20 20 20;
-    --card-foreground: 255 255 255;
+    --card: 255 255 255;
+    --card-foreground: 0 0 0;
 
-    --popover: 20 20 20;
-    --popover-foreground: 255 255 255;
+    --popover: 255 255 255;
+    --popover-foreground: 0 0 0;
 
     --primary: 132 140 114;
     --primary-foreground: 0 0 0;
 
-    --secondary: 40 40 40;
-    --secondary-foreground: 255 255 255;
+    --secondary: 245 243 240;
+    --secondary-foreground: 0 0 0;
 
-    --muted: 40 40 40;
-    --muted-foreground: 168 162 149;
+    --muted: 245 243 240;
+    --muted-foreground: 60 60 60;
 
-    --accent: 120 113 108;
-    --accent-foreground: 255 255 255;
+    --accent: 168 162 149;
+    --accent-foreground: 0 0 0;
 
     --destructive: 185 85 69;
     --destructive-foreground: 255 255 255;
 
-    --border: 40 40 40;
-    --input: 40 40 40;
+    --border: 231 229 228;
+    --input: 231 229 228;
     --ring: 132 140 114;
 
-    --sidebar-background: 0 0 0;
-    --sidebar-foreground: 255 255 255;
+    --sidebar-background: 255 255 255;
+    --sidebar-foreground: 0 0 0;
     --sidebar-primary: 132 140 114;
     --sidebar-primary-foreground: 0 0 0;
-    --sidebar-accent: 40 40 40;
-    --sidebar-accent-foreground: 255 255 255;
-    --sidebar-border: 40 40 40;
+    --sidebar-accent: 245 243 240;
+    --sidebar-accent-foreground: 0 0 0;
+    --sidebar-border: 231 229 228;
     --sidebar-ring: 132 140 114;
   }
 }
@@ -98,11 +98,12 @@
     @apply border-border;
   }
 
-  /* Aggressive white background enforcement for all devices */
+  /* Ultra-aggressive white background enforcement */
   html {
     background-color: white !important;
     color: black !important;
     background: white !important;
+    background-image: none !important;
   }
 
   body {
@@ -136,6 +137,8 @@
   /* Force white background on all containers */
   section, main, article, aside, nav, header, footer {
     background-color: white !important;
+    background: white !important;
+    background-image: none !important;
   }
 }
 
@@ -183,44 +186,82 @@
   }
 }
 
-/* Universal mobile overrides - most aggressive approach */
+/* Enhanced mobile overrides with stronger specificity */
 @media screen and (max-width: 768px) {
-  * {
-    background-color: white !important;
-    color: black !important;
-    background: white !important;
-    background-image: none !important;
-  }
-  
   html, body, #root {
     background-color: white !important;
     color: black !important;
     background: white !important;
     background-image: none !important;
+    -webkit-background-color: white !important;
+  }
+  
+  * {
+    background-color: transparent !important;
+    color: black !important;
+    background-image: none !important;
+  }
+  
+  body {
+    background-color: white !important;
+    background: white !important;
+  }
+  
+  #root {
+    background-color: white !important;
+    background: white !important;
   }
   
   h1, h2, h3, h4, h5, h6, p, span, div, a, button, section, main, article, aside, nav, header, footer {
     color: black !important;
-    background-color: transparent !important;
   }
 
-  /* Override any potential system dark mode */
+  section, main, article, aside, nav, header, footer {
+    background-color: white !important;
+    background: white !important;
+    background-image: none !important;
+  }
+
+  /* Override any potential system dark mode on mobile */
   @media (prefers-color-scheme: dark) {
-    * {
+    html, body, #root {
       background-color: white !important;
       color: black !important;
       background: white !important;
       background-image: none !important;
     }
+    
+    * {
+      background-color: transparent !important;
+      color: black !important;
+      background-image: none !important;
+    }
+    
+    body, #root {
+      background-color: white !important;
+      background: white !important;
+    }
   }
 }
 
-/* Additional safeguards for webkit browsers (Safari, mobile browsers) */
-@supports (-webkit-appearance: none) {
-  html, body, #root {
-    background-color: white !important;
-    background: white !important;
-    -webkit-background-color: white !important;
+/* Additional mobile browser specific overrides */
+@media screen and (max-width: 768px) {
+  @supports (-webkit-appearance: none) {
+    html, body, #root {
+      background-color: white !important;
+      background: white !important;
+      -webkit-background-color: white !important;
+      color: black !important;
+    }
+  }
+  
+  /* iOS Safari specific */
+  @supports (-webkit-touch-callout: none) {
+    html, body, #root {
+      background-color: white !important;
+      background: white !important;
+      -webkit-background-color: white !important;
+    }
   }
 }
 
