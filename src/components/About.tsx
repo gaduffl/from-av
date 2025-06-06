@@ -18,9 +18,7 @@ const About = () => {
                 Hej! I'm Anna Verena. My journey with ceramics began in 2021 with a handbuilding course in Wiesbaden. A year later, I discovered turning on the potter's wheel - first in Frankfurt, later in Mainz. What started as a hobby quickly developed into a real passion.
               </p>
               
-              <p className="text-foreground">
-                Since the opening of the open ceramics workshop in Mainz in December 2024, where I have been a member from day one, I have been continuously deepening my skills and experimenting with different techniques and glazes.
-              </p>
+              <p className="text-foreground">Since the opening of an open ceramics workshop in Mainz in December 2024, where I have been a member from day one, I have been continuously deepening my skills and experimenting with different techniques and glazes.</p>
               
               <p className="text-foreground">My work arises from the joy of the material and the creative process. I mark each piece with my personal signet - A and V in a circle, the initials of my name Anna Verena. Under the label &quot;from AV&quot; I share my ceramic works and the stories behind them.</p>
             </div>
