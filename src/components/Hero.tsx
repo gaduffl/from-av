@@ -1,6 +1,11 @@
 
+import DecorativeLines from './DecorativeLines';
+
 const Hero = () => {
-  return <section id="home" className="min-h-screen flex items-center justify-center pt-20">
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative">
+      <DecorativeLines variant="curved" color="sage" />
+      
       <div className="container mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 animate-fade-in">
@@ -33,6 +38,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+      
+      <DecorativeLines variant="flowing" position="bottom" color="black" className="absolute bottom-0" />
+    </section>
+  );
 };
+
 export default Hero;

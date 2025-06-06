@@ -1,10 +1,12 @@
+import DecorativeLines from './DecorativeLines';
 
 const About = () => {
   return (
-    <section id="about" className="py-24">
+    <section id="about" className="py-24 relative">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="animate-scale-in">
+          <div className="animate-scale-in relative">
+            <DecorativeLines variant="curved" color="sage" />
             <div className="aspect-[4/5] bg-secondary rounded-sm overflow-hidden">
               <img 
                 src="/lovable-uploads/fe8d3bbf-a03b-480f-89ad-49ba8a761320.png"
@@ -15,10 +17,13 @@ const About = () => {
           </div>
           
           <div className="space-y-8 animate-fade-in">
-            <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black">
-              Anna
-              <span className="text-black block">Verena</span>
-            </h2>
+            <div>
+              <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black">
+                Anna
+                <span className="text-black block">Verena</span>
+              </h2>
+              <DecorativeLines variant="minimal" color="sage" className="mt-4" />
+            </div>
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p className="text-lg">
@@ -57,6 +62,8 @@ const About = () => {
           </div>
         </div>
       </div>
+      
+      <DecorativeLines variant="flowing" color="black" className="absolute bottom-0" />
     </section>
   );
 };
