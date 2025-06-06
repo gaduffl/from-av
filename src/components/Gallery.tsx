@@ -21,9 +21,9 @@ const Gallery = () => {
     description: "Large serving piece for gatherings"
   }, {
     id: 5,
-    title: "Mountain Vase",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=600&fit=crop&crop=center",
-    description: "Tall vase echoing mountain silhouettes"
+    title: "Plates",
+    image: "/lovable-uploads/c885c3ae-80cf-4894-9245-26f36ba1c658.png",
+    description: "Elegant serving plates for special occasions"
   }, {
     id: 6,
     title: "River Stone Set",
