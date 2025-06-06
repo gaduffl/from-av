@@ -1,3 +1,4 @@
+
 const Gallery = () => {
   const pieces = [{
     id: 1,
@@ -30,10 +31,10 @@ const Gallery = () => {
     image: "/lovable-uploads/dab03e73-bd5a-4005-af83-6a134bae97de.png",
     description: "Handcrafted cups for daily rituals"
   }];
-  return <section id="gallery" className="py-24 bg-secondary/30">
+  return <section id="gallery" className="py-16 bg-secondary/30">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-6">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-4">
             Featured Collection
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -42,11 +43,11 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {pieces.map((piece, index) => <div key={piece.id} className="group cursor-pointer animate-fade-in" style={{
           animationDelay: `${index * 100}ms`
         }}>
-              <div className="aspect-[4/5] bg-card rounded-sm overflow-hidden mb-4 shadow-sm">
+              <div className="aspect-[4/5] bg-card rounded-sm overflow-hidden mb-3 shadow-sm">
                 <img src={piece.image} alt={piece.title} className="w-full h-full group-hover:scale-105 transition-transform duration-700 object-contain" />
               </div>
               <div className="space-y-2">
@@ -60,7 +61,7 @@ const Gallery = () => {
             </div>)}
         </div>
 
-        <div className="text-center mt-16">
+        <div className="text-center mt-12">
           <button onClick={() => document.getElementById('contact')?.scrollIntoView({
           behavior: 'smooth'
         })} className="text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">

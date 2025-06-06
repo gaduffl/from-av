@@ -1,10 +1,10 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-12">
-          <div className="space-y-4">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="space-y-3">
             <h3 className="font-crimson text-2xl font-semibold text-background">Clay & Soul</h3>
             <p className="text-background/80 leading-relaxed">
               Handcrafted pottery where ancient techniques meet contemporary design. 
@@ -12,7 +12,7 @@ const Footer = () => {
             </p>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h4 className="font-medium text-lg text-background">Quick Links</h4>
             <div className="space-y-2">
               <button 
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h4 className="font-medium text-lg text-background">Connect</h4>
             <p className="text-background/80 text-sm">
               Follow the journey and see behind-the-scenes of the creative process.
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-background/20 text-center">
+        <div className="mt-8 pt-6 border-t border-background/20 text-center">
           <p className="text-background/60 text-sm">
             © 2024 Clay & Soul Pottery. All rights reserved. | Handcrafted with love and intention.
           </p>

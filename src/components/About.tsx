@@ -1,9 +1,9 @@
 
 const About = () => {
   return (
-    <section id="about" className="py-24">
+    <section id="about" className="py-16">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-scale-in">
             <div className="aspect-[4/5] bg-secondary rounded-sm overflow-hidden">
               <img 
@@ -14,13 +14,13 @@ const About = () => {
             </div>
           </div>
           
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-6 animate-fade-in">
             <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black">
               Anna
               <span className="text-black block">Verena</span>
             </h2>
             
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p className="text-lg">
                 My hands have found their home in clay. What began as a quiet hobby has blossomed 
                 into a passionate pursuit of creating functional art that brings tranquility to 
@@ -40,7 +40,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 pt-8">
+            <div className="grid grid-cols-2 gap-6 pt-6">
               <div>
                 <h3 className="font-crimson text-2xl font-medium text-black mb-2">Philosophy</h3>
                 <p className="text-sm text-muted-foreground">

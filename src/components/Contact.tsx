@@ -32,11 +32,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-secondary/30">
+    <section id="contact" className="py-16 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-6">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-4">
               Let's Create
               <span className="text-black block">Together</span>
             </h2>
@@ -46,11 +46,11 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8 animate-fade-in">
+            <div className="space-y-6 animate-fade-in">
               <div>
-                <h3 className="font-crimson text-2xl font-medium text-black mb-4">
+                <h3 className="font-crimson text-2xl font-medium text-black mb-3">
                   Get in Touch
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -59,7 +59,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <div className="w-6 h-6 bg-sage rounded-full mt-1 flex-shrink-0"></div>
                   <div>
@@ -94,8 +94,8 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="animate-fade-in">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                       Name
