@@ -1,8 +1,8 @@
 const Gallery = () => {
   const pieces = [{
     id: 1,
-    title: "Plates",
-    image: "/lovable-uploads/5fdd684e-a752-47dc-880d-e43c30590583.png",
+    title: "Sage Vessel",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=500&fit=crop&crop=center",
     description: "A minimal vase inspired by Nordic design"
   }, {
     id: 2,
@@ -47,7 +47,7 @@ const Gallery = () => {
           animationDelay: `${index * 100}ms`
         }}>
               <div className="aspect-[4/5] bg-card rounded-sm overflow-hidden mb-4 shadow-sm">
-                <img src={piece.image} alt={piece.title} className="w-full h-full group-hover:scale-105 transition-transform duration-700 object-fill" />
+                <img src={piece.image} alt={piece.title} className="w-full h-full group-hover:scale-105 transition-transform duration-700 object-contain" />
               </div>
               <div className="space-y-2">
                 <h3 className="font-crimson text-xl font-medium text-foreground group-hover:text-sage transition-colors">
