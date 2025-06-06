@@ -26,9 +26,9 @@ const Gallery = () => {
     description: "Elegant serving plates for special occasions"
   }, {
     id: 6,
-    title: "River Stone Set",
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&h=400&fit=crop&crop=center",
-    description: "Collection of three nested bowls"
+    title: "Cups",
+    image: "/lovable-uploads/dab03e73-bd5a-4005-af83-6a134bae97de.png",
+    description: "Handcrafted cups for daily rituals"
   }];
   return <section id="gallery" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
