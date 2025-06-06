@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import emailjs from '@emailjs/browser';
@@ -81,8 +80,7 @@ const Contact = () => {
                   Get in Touch
                 </h3>
                 <p className="leading-relaxed text-slate-950">
-                  Whether you're looking for a custom piece for your home or interested in 
-                  featuring my work, I'm always excited to connect with fellow art enthusiasts.
+                  If you have any questions about my work or simply want to talk about ceramics, please get in touch. I look forward to your feedback and your thoughts on the pieces.
                 </p>
                 <p className="leading-relaxed text-slate-950 mt-4">
                   Send me a message using the form and I'll respond to <strong>info@fromav.com</strong>
