@@ -10,12 +10,12 @@ const About = () => {
           
           <div className="space-y-4 animate-fade-in">
             <h2 className="font-crimson text-3xl lg:text-4xl font-semibold text-foreground">
-              My work
+              About me
             </h2>
             
             <div className="space-y-3 text-foreground leading-relaxed">
               <p className="text-lg text-foreground">
-                Nice that you are here! I am pleased to give you a little insight into my ceramic works.
+                Hej! I'm Anna Verena. My journey with ceramics began in 2021 with a handbuilding course in Wiesbaden. A year later, I discovered turning on the potter's wheel - first in Frankfurt, later in Mainz. What started as a hobby quickly developed into a real passion.
               </p>
               
               <p className="text-foreground">
