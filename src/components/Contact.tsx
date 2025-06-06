@@ -1,6 +1,6 @@
+
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
-import DecorativeLines from './DecorativeLines';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -14,11 +14,13 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Simulate form submission
     toast({
       title: "Message sent successfully!",
       description: "Thank you for your interest. I'll get back to you soon.",
     });
     
+    // Reset form
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -30,9 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-secondary/30 relative">
-      <DecorativeLines variant="flowing" color="sage" className="absolute top-0" />
-      
+    <section id="contact" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
@@ -40,7 +40,6 @@ const Contact = () => {
               Let's Create
               <span className="text-black block">Together</span>
             </h2>
-            <DecorativeLines variant="minimal" color="black" className="mb-6" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Interested in commissioning a piece or learning more about my work? 
               I'd love to hear from you and discuss how we can bring your vision to life.
