@@ -1,5 +1,4 @@
 
-
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-6 py-8">
@@ -9,7 +8,7 @@ const Hero = () => {
               Ceramics
               <span className="text-foreground block">from AV</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+            <p className="text-xl text-foreground leading-relaxed max-w-lg">
               Where ancient craft meets contemporary design. Each piece is thoughtfully shaped by hand, 
               embodying the quiet beauty of Scandinavian minimalism.
             </p>
@@ -37,4 +36,3 @@ const Hero = () => {
     </section>;
 };
 export default Hero;
-

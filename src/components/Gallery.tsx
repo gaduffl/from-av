@@ -1,5 +1,4 @@
 
-
 const Gallery = () => {
   const pieces = [{
     id: 1,
@@ -38,7 +37,7 @@ const Gallery = () => {
           <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             Featured Collection
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
             Each piece tells a story of patience and intention. Explore the intersection 
             of functionality and artistry in these handcrafted ceramics.
           </p>
@@ -55,7 +54,7 @@ const Gallery = () => {
                 <h3 className="font-crimson text-xl font-medium text-foreground group-hover:text-foreground transition-colors">
                   {piece.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-foreground text-sm leading-relaxed">
                   {piece.description}
                 </p>
               </div>
@@ -73,4 +72,3 @@ const Gallery = () => {
     </section>;
 };
 export default Gallery;
-

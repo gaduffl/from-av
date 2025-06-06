@@ -36,11 +36,11 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-4">
+            <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground mb-4">
               Let's Create
-              <span className="text-black block">Together</span>
+              <span className="text-foreground block">Together</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
               Interested in commissioning a piece or learning more about my work? 
               I'd love to hear from you and discuss how we can bring your vision to life.
             </p>
@@ -50,10 +50,10 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-6 animate-fade-in">
               <div>
-                <h3 className="font-crimson text-2xl font-medium text-black mb-3">
+                <h3 className="font-crimson text-2xl font-medium text-foreground mb-3">
                   Get in Touch
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed">
                   Whether you're looking for a custom piece for your home or interested in 
                   featuring my work, I'm always excited to connect with fellow art enthusiasts.
                 </p>
@@ -63,8 +63,8 @@ const Contact = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-6 h-6 bg-sage rounded-full mt-1 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-black mb-1">Commission Work</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <h4 className="font-medium text-foreground mb-1">Commission Work</h4>
+                    <p className="text-sm text-foreground">
                       Custom pieces designed specifically for your space and needs
                     </p>
                   </div>
@@ -73,8 +73,8 @@ const Contact = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-6 h-6 bg-clay rounded-full mt-1 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-black mb-1">Studio Visits</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <h4 className="font-medium text-foreground mb-1">Studio Visits</h4>
+                    <p className="text-sm text-foreground">
                       Schedule a visit to see the creative process firsthand
                     </p>
                   </div>
@@ -83,8 +83,8 @@ const Contact = () => {
                 <div className="flex items-start space-x-4">
                   <div className="w-6 h-6 bg-stone rounded-full mt-1 flex-shrink-0"></div>
                   <div>
-                    <h4 className="font-medium text-black mb-1">Press Inquiries</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <h4 className="font-medium text-foreground mb-1">Press Inquiries</h4>
+                    <p className="text-sm text-foreground">
                       Media and publication opportunities welcome
                     </p>
                   </div>
@@ -167,7 +167,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 py-3"
+                  className="w-full text-foreground font-medium text-lg border-b-2 border-transparent hover:border-foreground transition-all duration-300 pb-1 py-3"
                 >
                   Send Message
                 </button>
