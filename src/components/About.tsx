@@ -1,4 +1,3 @@
-
 const About = () => {
   return <section id="about" className="py-8">
       <div className="container mx-auto px-6">
@@ -24,16 +23,7 @@ const About = () => {
               <p className="text-black">My work arises from the joy of the material and the creative process. I mark each piece with my personal signet - A and V in a circle, the initials of my name Anna Verena. Under the label &quot;from AV&quot; I share my ceramic works and the stories behind them.</p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              <div>
-                <h3 className="font-crimson text-2xl font-medium text-black mb-2">Philosophy</h3>
-                
-              </div>
-              <div>
-                <h3 className="font-crimson text-2xl font-medium text-black mb-2">Technique</h3>
-                
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

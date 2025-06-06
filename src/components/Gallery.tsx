@@ -1,4 +1,3 @@
-
 const Gallery = () => {
   const pieces = [{
     id: 1,
@@ -37,9 +36,7 @@ const Gallery = () => {
           <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-4">
             My work
           </h2>
-          <p className="text-lg text-black max-w-2xl mx-auto leading-relaxed">
-            Nice that you are here! I am pleased to give you a little insight into my ceramic works.
-          </p>
+          
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -53,19 +50,13 @@ const Gallery = () => {
                 <h3 className="font-crimson text-xl font-medium text-black group-hover:text-black transition-colors">
                   {piece.title}
                 </h3>
-                <p className="text-black text-sm leading-relaxed">
-                  {piece.description}
-                </p>
+                
               </div>
             </div>)}
         </div>
 
         <div className="text-center mt-8">
-          <button onClick={() => document.getElementById('contact')?.scrollIntoView({
-          behavior: 'smooth'
-        })} className="text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">
-            Inquire About Pieces
-          </button>
+          
         </div>
       </div>
     </section>;
