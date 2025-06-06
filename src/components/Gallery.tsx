@@ -16,8 +16,8 @@ const Gallery = () => {
     description: "Daily ritual cup in warm earth tone"
   }, {
     id: 4,
-    title: "Clay Platter",
-    image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=400&h=500&fit=crop&crop=center",
+    title: "Pedestal Bowl",
+    image: "/lovable-uploads/0b32d314-23f7-48c2-8590-724a50228f48.png",
     description: "Large serving piece for gatherings"
   }, {
     id: 5,
