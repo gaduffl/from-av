@@ -37,8 +37,7 @@ const Gallery = () => {
             My work
           </h2>
           <p className="text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
-            Each piece tells a story of patience and intention. Explore the intersection 
-            of functionality and artistry in these handcrafted ceramics.
+            Nice that you are here! I am pleased to give you a little insight into my ceramic works.
           </p>
         </div>
 
