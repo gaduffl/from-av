@@ -34,11 +34,10 @@ const Gallery = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-8 animate-fade-in">
           <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground mb-4">
-            Featured Collection
+            My work
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Each piece tells a story of patience and intention. Explore the intersection 
-            of functionality and artistry in these handcrafted ceramics.
+          <p className="text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
+            Nice that you are here! I am pleased to give you a little insight into my ceramic works.
           </p>
         </div>
 
@@ -50,8 +49,10 @@ const Gallery = () => {
                 <img src={piece.image} alt={piece.title} className="w-full h-full group-hover:scale-105 transition-transform duration-700 object-contain" />
               </div>
               <div className="space-y-2">
-                
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <h3 className="font-crimson text-xl font-medium text-foreground group-hover:text-foreground transition-colors">
+                  {piece.title}
+                </h3>
+                <p className="text-foreground text-sm leading-relaxed">
                   {piece.description}
                 </p>
               </div>
