@@ -1,4 +1,3 @@
-
 const About = () => {
   return <section id="about" className="py-8">
       <div className="container mx-auto px-6">
@@ -29,15 +28,11 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div>
                 <h3 className="font-crimson text-2xl font-medium text-foreground mb-2">Philosophy</h3>
-                <p className="text-sm text-foreground">
-                  Embracing imperfection as a path to authentic beauty
-                </p>
+                
               </div>
               <div>
                 <h3 className="font-crimson text-2xl font-medium text-foreground mb-2">Technique</h3>
-                <p className="text-sm text-foreground">
-                  Traditional wheel throwing with contemporary finishing
-                </p>
+                
               </div>
             </div>
           </div>
