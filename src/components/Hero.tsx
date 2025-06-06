@@ -1,10 +1,11 @@
+
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center pt-20">
       <div className="container mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 animate-fade-in">
             <h1 className="font-crimson text-5xl lg:text-7xl font-semibold text-foreground leading-tight">
-              Handcrafted
+              Ceramics
               <span className="text-sage block">from AV</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
