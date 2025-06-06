@@ -33,7 +33,7 @@ const Gallery = () => {
   return <section id="gallery" className="py-24 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground mb-6">
+          <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-6">
             Featured Collection
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -50,7 +50,7 @@ const Gallery = () => {
                 <img src={piece.image} alt={piece.title} className="w-full h-full group-hover:scale-105 transition-transform duration-700 object-contain" />
               </div>
               <div className="space-y-2">
-                <h3 className="font-crimson text-xl font-medium text-foreground group-hover:text-sage transition-colors">
+                <h3 className="font-crimson text-xl font-medium text-black group-hover:text-black transition-colors">
                   {piece.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
@@ -63,7 +63,7 @@ const Gallery = () => {
         <div className="text-center mt-16">
           <button onClick={() => document.getElementById('contact')?.scrollIntoView({
           behavior: 'smooth'
-        })} className="border border-sage text-sage px-8 py-3 rounded-sm hover:bg-sage hover:text-white transition-all duration-300">
+        })} className="text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">
             Inquire About Pieces
           </button>
         </div>

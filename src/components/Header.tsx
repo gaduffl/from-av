@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,26 +14,26 @@ const Header = () => {
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <div className="font-crimson text-2xl font-semibold text-foreground tracking-wide">from AV</div>
+          <div className="font-crimson text-2xl font-semibold text-black tracking-wide">from AV</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('home')} className="text-muted-foreground hover:text-sage transition-colors duration-300">
+            <button onClick={() => scrollToSection('home')} className="text-muted-foreground hover:text-black border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">
               Home
             </button>
-            <button onClick={() => scrollToSection('gallery')} className="text-muted-foreground hover:text-sage transition-colors duration-300">
+            <button onClick={() => scrollToSection('gallery')} className="text-muted-foreground hover:text-black border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">
               Gallery
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-muted-foreground hover:text-sage transition-colors duration-300">
+            <button onClick={() => scrollToSection('about')} className="text-muted-foreground hover:text-black border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">
               About
             </button>
-            <button onClick={() => scrollToSection('contact')} className="bg-sage text-white px-6 py-2 rounded-sm hover:bg-sage/90 transition-colors duration-300">
+            <button onClick={() => scrollToSection('contact')} className="text-black font-medium border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">
               Contact
             </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-muted-foreground hover:text-sage transition-colors">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-muted-foreground hover:text-black transition-colors">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -42,16 +43,16 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && <div className="md:hidden mt-4 py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('home')} className="text-left text-muted-foreground hover:text-sage transition-colors duration-300">
+              <button onClick={() => scrollToSection('home')} className="text-left text-muted-foreground hover:text-black border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 w-fit">
                 Home
               </button>
-              <button onClick={() => scrollToSection('gallery')} className="text-left text-muted-foreground hover:text-sage transition-colors duration-300">
+              <button onClick={() => scrollToSection('gallery')} className="text-left text-muted-foreground hover:text-black border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 w-fit">
                 Gallery
               </button>
-              <button onClick={() => scrollToSection('about')} className="text-left text-muted-foreground hover:text-sage transition-colors duration-300">
+              <button onClick={() => scrollToSection('about')} className="text-left text-muted-foreground hover:text-black border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 w-fit">
                 About
               </button>
-              <button onClick={() => scrollToSection('contact')} className="text-left bg-sage text-white px-6 py-2 rounded-sm hover:bg-sage/90 transition-colors duration-300 w-fit">
+              <button onClick={() => scrollToSection('contact')} className="text-left text-black font-medium border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 w-fit">
                 Contact
               </button>
             </div>

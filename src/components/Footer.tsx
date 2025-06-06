@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-12">
           <div className="space-y-4">
-            <h3 className="font-crimson text-2xl font-semibold">Clay & Soul</h3>
+            <h3 className="font-crimson text-2xl font-semibold text-background">Clay & Soul</h3>
             <p className="text-background/80 leading-relaxed">
               Handcrafted pottery where ancient techniques meet contemporary design. 
               Each piece is created with intention and care.
@@ -13,23 +13,23 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-medium text-lg">Quick Links</h4>
+            <h4 className="font-medium text-lg text-background">Quick Links</h4>
             <div className="space-y-2">
               <button 
                 onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 hover:text-background transition-colors"
+                className="block text-background/80 hover:text-background border-b border-transparent hover:border-background transition-all duration-300 pb-1 w-fit"
               >
                 Gallery
               </button>
               <button 
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 hover:text-background transition-colors"
+                className="block text-background/80 hover:text-background border-b border-transparent hover:border-background transition-all duration-300 pb-1 w-fit"
               >
                 About
               </button>
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-background/80 hover:text-background transition-colors"
+                className="block text-background/80 hover:text-background border-b border-transparent hover:border-background transition-all duration-300 pb-1 w-fit"
               >
                 Contact
               </button>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           
           <div className="space-y-4">
-            <h4 className="font-medium text-lg">Connect</h4>
+            <h4 className="font-medium text-lg text-background">Connect</h4>
             <p className="text-background/80 text-sm">
               Follow the journey and see behind-the-scenes of the creative process.
             </p>

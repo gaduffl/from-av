@@ -15,9 +15,9 @@ const About = () => {
           </div>
           
           <div className="space-y-8 animate-fade-in">
-            <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground">
+            <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black">
               Anna
-              <span className="text-sage block">Verena</span>
+              <span className="text-black block">Verena</span>
             </h2>
             
             <div className="space-y-6 text-muted-foreground leading-relaxed">
@@ -42,13 +42,13 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-8 pt-8">
               <div>
-                <h3 className="font-crimson text-2xl font-medium text-foreground mb-2">Philosophy</h3>
+                <h3 className="font-crimson text-2xl font-medium text-black mb-2">Philosophy</h3>
                 <p className="text-sm text-muted-foreground">
                   Embracing imperfection as a path to authentic beauty
                 </p>
               </div>
               <div>
-                <h3 className="font-crimson text-2xl font-medium text-foreground mb-2">Technique</h3>
+                <h3 className="font-crimson text-2xl font-medium text-black mb-2">Technique</h3>
                 <p className="text-sm text-muted-foreground">
                   Traditional wheel throwing with contemporary finishing
                 </p>
