@@ -1,8 +1,8 @@
 const Gallery = () => {
   const pieces = [{
     id: 1,
-    title: "Sage Vessel",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=500&fit=crop&crop=center",
+    title: "Plates",
+    image: "/lovable-uploads/5fdd684e-a752-47dc-880d-e43c30590583.png",
     description: "A minimal vase inspired by Nordic design"
   }, {
     id: 2,
