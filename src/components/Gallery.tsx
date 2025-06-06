@@ -1,3 +1,4 @@
+
 const Gallery = () => {
   const pieces = [{
     id: 1,
@@ -33,10 +34,10 @@ const Gallery = () => {
   return <section id="gallery" className="py-12 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-8 animate-fade-in">
-          <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-foreground mb-4">
+          <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-4">
             My work
           </h2>
-          <p className="text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-black max-w-2xl mx-auto leading-relaxed">
             Nice that you are here! I am pleased to give you a little insight into my ceramic works.
           </p>
         </div>
@@ -49,10 +50,10 @@ const Gallery = () => {
                 <img src={piece.image} alt={piece.title} className="w-full h-full group-hover:scale-105 transition-transform duration-700 object-contain" />
               </div>
               <div className="space-y-2">
-                <h3 className="font-crimson text-xl font-medium text-foreground group-hover:text-foreground transition-colors">
+                <h3 className="font-crimson text-xl font-medium text-black group-hover:text-black transition-colors">
                   {piece.title}
                 </h3>
-                <p className="text-foreground text-sm leading-relaxed">
+                <p className="text-black text-sm leading-relaxed">
                   {piece.description}
                 </p>
               </div>
@@ -62,7 +63,7 @@ const Gallery = () => {
         <div className="text-center mt-8">
           <button onClick={() => document.getElementById('contact')?.scrollIntoView({
           behavior: 'smooth'
-        })} className="text-foreground font-medium text-lg border-b-2 border-transparent hover:border-foreground transition-all duration-300 pb-1">
+        })} className="text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1">
             Inquire About Pieces
           </button>
         </div>

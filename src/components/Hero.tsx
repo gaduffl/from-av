@@ -4,23 +4,23 @@ const Hero = () => {
       <div className="container mx-auto px-6 py-8">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-4 animate-fade-in">
-            <h1 className="font-crimson text-5xl lg:text-7xl font-semibold text-foreground leading-tight">
+            <h1 className="font-crimson text-5xl lg:text-7xl font-semibold text-black leading-tight">
               Ceramics
-              <span className="text-foreground block">from AV</span>
+              <span className="text-black block">from AV</span>
             </h1>
-            <p className="text-xl text-foreground leading-relaxed max-w-lg">
+            <p className="text-xl text-black leading-relaxed max-w-lg">
               Where ancient craft meets contemporary design. Each piece is thoughtfully shaped by hand, 
               embodying the quiet beauty of Scandinavian minimalism.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button onClick={() => document.getElementById('gallery')?.scrollIntoView({
               behavior: 'smooth'
-            })} className="text-foreground font-medium text-lg border-b-2 border-transparent hover:border-foreground transition-all duration-300 pb-1 w-fit">
+            })} className="text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 w-fit">
                 View Collection
               </button>
               <button onClick={() => document.getElementById('about')?.scrollIntoView({
               behavior: 'smooth'
-            })} className="text-foreground font-medium text-lg border-b-2 border-transparent hover:border-foreground transition-all duration-300 pb-1 w-fit">
+            })} className="text-black font-medium text-lg border-b-2 border-transparent hover:border-black transition-all duration-300 pb-1 w-fit">
                 My Story
               </button>
             </div>

@@ -5,7 +5,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="space-y-3">
-            <h3 className="font-crimson text-2xl font-semibold text-foreground">Clay & Soul</h3>
+            <h3 className="font-crimson text-2xl font-semibold text-black">Clay & Soul</h3>
             <p className="text-muted-foreground leading-relaxed">
               Handcrafted pottery where ancient techniques meet contemporary design. 
               Each piece is created with intention and care.
@@ -13,23 +13,23 @@ const Footer = () => {
           </div>
           
           <div className="space-y-3">
-            <h4 className="font-medium text-lg text-foreground">Quick Links</h4>
+            <h4 className="font-medium text-lg text-black">Quick Links</h4>
             <div className="space-y-2">
               <button 
                 onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-muted-foreground hover:text-foreground border-b border-transparent hover:border-foreground transition-all duration-300 pb-1 w-fit"
+                className="block text-muted-foreground hover:text-black border-b border-transparent hover:border-black transition-all duration-300 pb-1 w-fit"
               >
                 Gallery
               </button>
               <button 
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-muted-foreground hover:text-foreground border-b border-transparent hover:border-foreground transition-all duration-300 pb-1 w-fit"
+                className="block text-muted-foreground hover:text-black border-b border-transparent hover:border-black transition-all duration-300 pb-1 w-fit"
               >
                 About
               </button>
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="block text-muted-foreground hover:text-foreground border-b border-transparent hover:border-foreground transition-all duration-300 pb-1 w-fit"
+                className="block text-muted-foreground hover:text-black border-b border-transparent hover:border-black transition-all duration-300 pb-1 w-fit"
               >
                 Contact
               </button>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           
           <div className="space-y-3">
-            <h4 className="font-medium text-lg text-foreground">Connect</h4>
+            <h4 className="font-medium text-lg text-black">Connect</h4>
             <p className="text-muted-foreground text-sm">
               Follow the journey and see behind-the-scenes of the creative process.
             </p>
