@@ -5,7 +5,7 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <h1 className="font-crimson text-5xl lg:text-7xl font-semibold text-foreground leading-tight">
               Handcrafted
-              <span className="text-sage block">Pottery</span>
+              <span className="text-sage block">from AV</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
               Where ancient craft meets contemporary design. Each piece is thoughtfully shaped by hand, 
