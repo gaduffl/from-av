@@ -1,4 +1,3 @@
-
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center pt-16">
       <div className="container mx-auto px-6 py-8">
@@ -8,10 +7,7 @@ const Hero = () => {
               Ceramics
               <span className="text-black block">from AV</span>
             </h1>
-            <p className="text-xl text-black leading-relaxed max-w-lg">
-              Where ancient craft meets contemporary design. Each piece is thoughtfully shaped by hand, 
-              embodying the quiet beauty of Scandinavian minimalism.
-            </p>
+            <p className="text-xl text-black leading-relaxed max-w-lg">Nice to have you here! I'm pleased to give you a little insight into my ceramic work.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button onClick={() => document.getElementById('gallery')?.scrollIntoView({
               behavior: 'smooth'
