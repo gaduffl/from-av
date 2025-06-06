@@ -1,5 +1,4 @@
 
-
 const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center pt-20">
       <div className="container mx-auto px-6 py-20">
@@ -29,7 +28,7 @@ const Hero = () => {
           
           <div className="animate-scale-in">
             <div className="aspect-square bg-secondary rounded-sm overflow-hidden">
-              <img alt="Handcrafted pottery in a minimalist setting" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/lovable-uploads/0e28a8f9-2713-43d2-adcb-8d0c5e278374.jpg" />
+              <img alt="Handcrafted pottery in a minimalist setting" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/lovable-uploads/7b0e5e85-ce5e-44cb-aa1e-a85995a5d074.png" />
             </div>
           </div>
         </div>
@@ -37,4 +36,3 @@ const Hero = () => {
     </section>;
 };
 export default Hero;
-
