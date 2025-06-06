@@ -1,5 +1,4 @@
 
-
 const About = () => {
   return (
     <section id="about" className="py-8">
@@ -20,16 +19,16 @@ const About = () => {
               About me
             </h2>
             
-            <div className="space-y-3 text-muted-foreground leading-relaxed">
-              <p className="text-lg">
+            <div className="space-y-3 text-foreground leading-relaxed">
+              <p className="text-lg text-foreground">
                 Hej! I'm Anna Verena. My journey with ceramics began in 2021 with a handbuilding course in Wiesbaden. A year later, I discovered turning on the potter's wheel - first in Frankfurt, later in Mainz. What started as a hobby quickly developed into a real passion.
               </p>
               
-              <p>
+              <p className="text-foreground">
                 Since the opening of the open ceramics workshop in Mainz in December 2024, where I have been a member from day one, I have been continuously deepening my skills and experimenting with different techniques and glazes.
               </p>
               
-              <p>
+              <p className="text-foreground">
                 My work arises from the joy of the material and the creative process. I mark each piece with my personal signet - A and V in a circle, the initials of my first name Anna Verena. Under the label "from AV" I share my ceramic works and the stories behind them.
               </p>
             </div>
@@ -37,13 +36,13 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div>
                 <h3 className="font-crimson text-2xl font-medium text-foreground mb-2">Philosophy</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-foreground">
                   Embracing imperfection as a path to authentic beauty
                 </p>
               </div>
               <div>
                 <h3 className="font-crimson text-2xl font-medium text-foreground mb-2">Technique</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-foreground">
                   Traditional wheel throwing with contemporary finishing
                 </p>
               </div>
@@ -56,4 +55,3 @@ const About = () => {
 };
 
 export default About;
-
