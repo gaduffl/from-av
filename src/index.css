@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,7 +97,7 @@
    * This is more effective and cleaner than applying it to every element.
    */
   html, body {
-    background-color: rgb(var(--background));
+    background-color: white !important;
     color: rgb(var(--foreground));
   }
 
@@ -104,11 +105,12 @@
     @apply font-inter;
     font-feature-settings: "rlig" 1, "calt" 1;
     min-height: 100vh;
+    background-color: white !important;
   }
 
   /* Ensure the root element also has the correct background */
   #root {
-      background-color: rgb(var(--background));
+      background-color: white !important;
       color: rgb(var(--foreground));
       min-height: 100vh;
   }
@@ -122,7 +124,7 @@
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px rgb(var(--background)) inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
     -webkit-text-fill-color: rgb(var(--foreground)) !important;
   }
 }
@@ -144,4 +146,13 @@
   
   .text-earth { color: rgb(var(--earth)); }
   .bg-earth { background-color: rgb(var(--earth)); }
+
+  /* Force white background utility classes */
+  .force-white-bg {
+    background-color: white !important;
+  }
+
+  .force-black-text {
+    color: black !important;
+  }
 }
