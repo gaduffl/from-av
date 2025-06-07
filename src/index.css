@@ -91,6 +91,7 @@
 @layer base {
   * {
     @apply border-border;
+    background-color: white !important;
   }
 
   /* * Set the default background and text color on the html and body.
@@ -98,7 +99,7 @@
    */
   html, body {
     background-color: white !important;
-    color: rgb(var(--foreground));
+    color: rgb(var(--foreground)) !important;
   }
 
   body {
@@ -111,12 +112,22 @@
   /* Ensure the root element also has the correct background */
   #root {
       background-color: white !important;
-      color: rgb(var(--foreground));
+      color: rgb(var(--foreground)) !important;
       min-height: 100vh;
+  }
+
+  /* Force white background on all main containers */
+  div, section, article, main, header, footer, nav {
+    background-color: white !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-crimson;
+    color: black !important;
+  }
+
+  p {
+    color: black !important;
   }
 
   /* Style for autofilled input fields in WebKit browsers */
