@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
           
           <div className="animate-scale-in">
-            <div className="aspect-square bg-secondary rounded-sm overflow-hidden">
+            <div className="aspect-square bg-background rounded-sm overflow-hidden">
               <img alt="Handcrafted pottery in a minimalist setting" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="/lovable-uploads/7b0e5e85-ce5e-44cb-aa1e-a85995a5d074.png" />
             </div>
           </div>
