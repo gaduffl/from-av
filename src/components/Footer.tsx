@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <footer className="bg-secondary py-12">
+  return <footer className="bg-background py-12">
       
     </footer>;
 };

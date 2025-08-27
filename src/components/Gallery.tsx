@@ -30,7 +30,7 @@ const Gallery = () => {
     image: "/lovable-uploads/dab03e73-bd5a-4005-af83-6a134bae97de.png",
     description: "Handcrafted cups for daily rituals"
   }];
-  return <section id="gallery" className="py-12 bg-secondary/30">
+  return <section id="gallery" className="py-12 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-8 animate-fade-in">
           <h2 className="font-crimson text-4xl lg:text-5xl font-semibold text-black mb-4">

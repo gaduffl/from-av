@@ -3,7 +3,7 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="animate-scale-in">
-            <div className="aspect-[4/5] bg-secondary rounded-sm overflow-hidden">
+            <div className="aspect-[4/5] bg-background rounded-sm overflow-hidden">
               <img src="/lovable-uploads/fe8d3bbf-a03b-480f-89ad-49ba8a761320.png" alt="Anna Verena, ceramic artist" className="w-full h-full object-cover" />
             </div>
           </div>
