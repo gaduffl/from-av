@@ -89,9 +89,9 @@
  * Removed excessive `!important` tags for better CSS specificity management.
  */
 @layer base {
+  /* Apply border color globally without forcing a background */
   * {
     @apply border-border;
-    background-color: white !important;
   }
 
   /* * Set the default background and text color on the html and body.
@@ -116,10 +116,9 @@
       min-height: 100vh;
   }
 
-  /* Force white background on all main containers */
-  div, section, article, main, header, footer, nav {
-    background-color: white !important;
-  }
+  /* Allow container elements to define their own backgrounds */
+  /* Removed blanket white background so components like headers or hero sections */
+  /* can apply custom colors or transparency */
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-crimson;
