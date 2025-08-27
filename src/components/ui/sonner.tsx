@@ -21,7 +21,8 @@ const Toaster = ({ ...props }: ToasterProps) => {
             "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
           error: "group-[.toaster]:bg-destructive group-[.toaster]:text-destructive-foreground group-[.toaster]:border-destructive",
           success: "group-[.toaster]:bg-primary group-[.toaster]:text-primary-foreground group-[.toaster]:border-primary",
-          warning: "group-[.toaster]:bg-yellow-400 group-[.toaster]:text-yellow-900 group-[.toaster]:border-yellow-400",
+          warning:
+            "group-[.toaster]:bg-gray-100 group-[.toaster]:text-gray-900 group-[.toaster]:border-gray-300",
           info: "group-[.toaster]:bg-blue-400 group-[.toaster]:text-blue-900 group-[.toaster]:border-blue-400",
         },
       }}
